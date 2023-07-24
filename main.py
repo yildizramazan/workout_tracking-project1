@@ -34,10 +34,6 @@ parameters = {
     "age": AGE
 }
 
-
-#{'exercises': [{'tag_id': 317, 'user_input': 'ran', 'duration_min': 40.02, 'met': 9.8, 'nf_calories': 529.46, 'photo': {'highres': 'https://d2xdmhkmkbyw75.cloudfront.net/exercise/317_highres.jpg', 'thumb': 'https://d2xdmhkmkbyw75.cloudfront.net/exercise/317_thumb.jpg', 'is_user_uploaded': False}, 'compendium_code': 12050, 'name': 'running', 'description': None, 'benefits': None}]}
-#{'exercises': [{'tag_id': 63, 'user_input': 'swim', 'duration_min': 30, 'met': 6, 'nf_calories': 243, 'photo': {'highres': 'https://d2xdmhkmkbyw75.cloudfront.net/exercise//63_highres.jpg', 'thumb': 'https://d2xdmhkmkbyw75.cloudfront.net/exercise//63_thumb.jpg', 'is_user_uploaded': False}, 'compendium_code': 18310, 'name': 'swimming', 'description': None, 'benefits': None}]}
-
 exercise_response = requests.post(url=exercise_endpoint, json=parameters, headers=headers)
 result = exercise_response.json()
 
